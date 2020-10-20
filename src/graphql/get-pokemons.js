@@ -8,7 +8,12 @@ export const GET_POKEMONS = gql`
             image
             maxHP
             maxCP
-            
+            attacks {
+                special {
+                    name
+                    damage
+                }
+            } 
         }   
     }
 `;
